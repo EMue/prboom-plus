@@ -122,6 +122,8 @@ then
         AC_DEFINE(USE_GLU_IMAGESCALE,1,[Define if you want to use gluImageScale])
         AC_DEFINE(USE_GLU_MIPMAP,1,[Define if you want to use gluBuild2DMipmaps])
         AC_DEFINE(USE_GLU_TESS,1,[Define if you want to use the gluTesselator])
+        AC_DEFINE(USE_FBO_TECHNIQUE,1,[Define if you want to use FBO for some tricks in OpenGL])
+        AC_DEFINE(USE_SHADERS,1,[Define if you want to use hardware shaders in OpenGL])
         GL_LIBS="$SYS_GL_LIBS"
     else
         AC_MSG_ERROR([You must have the relevant OpenGL development libraries & headers installed to compile with OpenGL support])
